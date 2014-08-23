@@ -1,0 +1,37 @@
+{
+	"href" : "https://api.stormpath.com/v1/applications/6f7uRBraIm0tWZ0ZfdxsYB",
+	"name" : "Apache Shiro Tutorial Webapp",
+	"description" : null,
+	"status" : "ENABLED",
+	"tenant" : {
+		"href" : "https://api.stormpath.com/v1/tenants/3JR9yAE03zoxKSKbbQwJdf"
+	},
+	"defaultAccountStoreMapping" : {
+		"href" : "https://api.stormpath.com/v1/accountStoreMappings/6f8T1cD383mZKkNedMOYIp"
+	},
+	"defaultGroupStoreMapping" : {
+		"href" : "https://api.stormpath.com/v1/accountStoreMappings/6f8T1cD383mZKkNedMOYIp"
+	},
+	"customData" : {
+		"href" : "https://api.stormpath.com/v1/applications/6f7uRBraIm0tWZ0ZfdxsYB/customData"
+	},
+	"accounts" : {
+		"href" : "https://api.stormpath.com/v1/applications/6f7uRBraIm0tWZ0ZfdxsYB/accounts"
+	},
+	"groups" : {
+		"href" : "https://api.stormpath.com/v1/applications/6f7uRBraIm0tWZ0ZfdxsYB/groups"
+	},
+	"accountStoreMappings" : {
+		"href" : "https://api.stormpath.com/v1/applications/6f7uRBraIm0tWZ0ZfdxsYB/accountStoreMappings"
+	},
+	"loginAttempts" : {
+		"href" : "https://api.stormpath.com/v1/applications/6f7uRBraIm0tWZ0ZfdxsYB/loginAttempts"
+	},
+	"passwordResetTokens" : {
+		"href" :
+		"https://api.stormpath.com/v1/applications/6f7uRBraIm0tWZ0ZfdxsYB/passwordResetTokens"
+	},
+	"apiKeys" : {
+		"href" : "https://api.stormpath.com/v1/applications/6f7uRBraIm0tWZ0ZfdxsYB/apiKeys"
+	}
+}
