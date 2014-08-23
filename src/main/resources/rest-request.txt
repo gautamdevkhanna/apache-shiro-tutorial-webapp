@@ -1,0 +1,85 @@
+
+http://shiro.apache.org/webapp-tutorial.html
+
+curl -X POST --user 3C4U35F11ZTMBA6LJLB5JF1B7:aH+D8H/eI1BSta3yVMCfTb+BMat37tsBsB9uJdUbai8 \
+    -H "Accept: application/json" \
+    -H "Content-Type: application/json" \
+    -d '{
+           "name" : "Apache Shiro Tutorial Webapp"
+        }' \
+    'https://api.stormpath.com/v1/applications?createDirectory=true'
+	
+TEST	
+	
+curl -X POST --user 3C4U35F11ZTMBA6LJLB5JF1B7:aH+D8H/eI1BSta3yVMCfTb+BMat37tsBsB9uJdUbai8 \
+    -H "Accept: application/json" \
+    -H "Content-Type: application/json" \
+    -d '{
+           "givenName": "Gautamdev",
+           "surname": "Khanna",
+           "username": "gautam",
+           "email": "gautamdev.khanna@gmail.com",
+           "password":"Hello@123"
+        }' \
+ "https://api.stormpath.com/v1/applications/6f7uRBraIm0tWZ0ZfdxsYB/accounts"	
+	
+	
+	$ curl -X POST --user 3C4U35F11ZTMBA6LJLB5JF1B7:aH+D8H/eI1BSta3yVMCfTb+BMat37tsBsB9uJdUbai8 \
+>     -H "Accept: application/json" \
+>     -H "Content-Type: application/json" \
+>     -d '{
+>            "givenName": "Gautamdev",
+>            "surname": "Khanna",
+>            "username": "gautam",
+>            "email": "gautamdev.khanna@gmail.com",
+>            "password":"Hello@123"
+>         }' \
+>  "https://api.stormpath.com/v1/applications/6f7uRBraIm0tWZ0ZfdxsYB/accounts"
+{"href":"https://api.stormpath.com/v1/accounts/5VqsapvnU6Ie7azXcFAh55","username":"gautam","email":"gautamdev.khanna@gmail.com","givenName":"Gautamdev","middleName":null,"surname":"Khanna","fullName":"Gautamdev Khanna","status":"ENABLED","emailVerificationToken":null,"customData":{"href":"https://api.stormpath.com/v1/accounts/5VqsapvnU6Ie7azXcFAh55/customData"},"providerData":{"href":"https://api.stormpath.com/v1/accounts/5VqsapvnU6Ie7azXcFAh55/providerData"},"directory":{"href":"https://api.stormpath.com/v1/directories/6f835IRx0axJTbqqPZZXzL"},"tenant":{"href":"https://api.stormpath.com/v1/tenants/3JR9yAE03zoxKSKbbQwJdf"},"groups":{"href":"https://api.stormpath.com/v1/accounts/5VqsapvnU6Ie7azXcFAh55/groups"},"groupMemberships":{"href":"https://api.stormpath.com/v1/accounts/5VqsapvnU6Ie7azXcFAh55/groupMemberships"},"apiKeys":{"href":"https://api.stormpath.com/v1/accounts/5VqsapvnU6Ie7azXcFAh55/apiKeys"}}
+admin@RLVT-LAP002 /E/gdk/sandbox/repo/shiro/apache-shiro-tutorial-webapp (step3)
+
+
+	
+	
+	
+	$ curl -X POST --user 3C4U35F11ZTMBA6LJLB5JF1B7:aH+D8H/eI1BSta3yVMCfTb+BMat37tsBsB9uJdUbai8 \
+>     -H "Accept: application/json" \
+>     -H "Content-Type: application/json" \
+>     -d '{
+>            "name" : "Apache Shiro Tutorial Webapp"
+>         }' \
+>     'https://api.stormpath.com/v1/applications?createDirectory=true'
+
+
+
+{"href":"https://api.stormpath.com/v1/applications/6f7uRBraIm0tWZ0ZfdxsYB","name":"Apache Shiro Tutorial Webapp","description":null,"status":"ENABLED","tenant":{"href":"https://api.stormpath.com/v1/tenants/3JR9yAE03zoxKSKbbQwJdf"},"defaultAccountStoreMapping":{"href":"https://api.stormpath.com/v1/accountStoreMappings/6f8T1cD383mZKkNedMOYIp"},"defaultGroupStoreMapping":{"href":"https://api.stormpath.com/v1/accountStoreMappings/6f8T1cD383mZKkNedMOYIp"},"customData":{"href":"https://api.stormpath.com/v1/applications/6f7uRBraIm0tWZ0ZfdxsYB/customData"},"accounts":{"href":"https://api.stormpath.com/v1/applications/6f7uRBraIm0tWZ0ZfdxsYB/accounts"},"groups":{"href":"https://api.stormpath.com/v1/applications/6f7uRBraIm0tWZ0ZfdxsYB/groups"},"accountStoreMappings":{"href":"https://api.stormpath.com/v1/applications/6f7uRBraIm0tWZ0ZfdxsYB/accountStoreMappings"},"loginAttempts":{"href":"https://api.stormpath.com/v1/applications/6f7uRBraIm0tWZ0ZfdxsYB/loginAttempts"},"passwordResetTokens":{"href":
+"https://api.stormpath.com/v1/applications/6f7uRBraIm0tWZ0ZfdxsYB/passwordResetTokens"},"apiKeys":{"href":"https://api.stormpath.com/v1/applications/6f7uRBraIm0tWZ0ZfdxsYB/apiKeys"}}
+
+
+admin@RLVT-LAP002 /E/gdk/sandbox/repo/shiro/apache-shiro-tutorial-webapp (step2)
+$
+
+
+
+TEST
+
+
+
+$ curl -X POST --user 3C4U35F11ZTMBA6LJLB5JF1B7:aH+D8H/eI1BSta3yVMCfTb+BMat37tsBsB9uJdUbai8 \
+>     -H "Accept: application/json" \
+>     -H "Content-Type: application/json" \
+>     -d '{
+>            "givenName": "Jean-Luc",
+>            "surname": "Picard",
+>            "username": "jlpicard",
+>            "email": "capt@enterprise.com",
+>            "password":"Changeme1"
+>         }' \
+>  "https://api.stormpath.com/v1/applications/6f7uRBraIm0tWZ0ZfdxsYB/accounts"
+
+
+{"href":"https://api.stormpath.com/v1/accounts/4wZgSSKnIFOy85HPSXi1N1","username":"jlpicard","email":"capt@enterprise.com","givenName":"Jean-Luc","middleName":null,"surname":"Picard","fullName":"Jean-Luc Picard","status":"ENABLED","emailVerificationToken":null,"customData":{"href":"https://api.stormpath.com/v1/accounts/4wZgSSKnIFOy85HPSXi1N1/customData"},"providerData":{"href":"https://api.stormpath.com/v1/accounts/4wZgSSKnIFOy85HPSXi1N1/providerData"},"directory":{"href":"https://api.stormpath.com/v1/directories/6f835IRx0axJTbqqPZZXzL"},"tenant":{"href":"https://api.stormpath.com/v1/tenants/3JR9yAE03zoxKSKbbQwJdf"},"groups":{"href":"https://api.stormpath.com/v1/accounts/4wZgSSKnIFOy85HPSXi1N1/groups"},"groupMemberships":{"href":"https://api.stormpath.com/v1/accounts/4wZgSSKnIFOy85HPSXi1N1/groupMemberships"},"apiKeys":{"href":"https://api.stormpath.com/v1/accounts/4wZgSSKnIFOy85HPSXi1N1/apiKeys"}}
+
+
+
+
